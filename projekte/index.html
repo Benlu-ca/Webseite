@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benlu-ca</title>
+    <meta name="theme-color" content="#344e41" />
+    <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+
+    <script>
+        const birthday = new Date('2006-06-14');
+  
+        const now = new Date();
+        
+        const ageInMilliseconds = now - birthday;
+        const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365);
+        
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const ageElement = document.getElementById('age');
+            ageElement.textContent = Math.floor(ageInYears);
+        });
+    </script>
+
+    <style>
+        html{
+            scrollbar-gutter: unset;            
+        }
+
+        .card#overme{
+            background-color: #3a5a40;
+            color: white;
+            border-radius: 30px 30px 15px 15px;
+        }
+
+        .card#programming{
+            background-color: #344e41;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .card#series{
+            background-color: #344e41;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .card#design{
+            background-color: #3a5a40;
+            color: white;
+            border-radius: 15px 15px 30px 30px;
+        }
+
+        .navbar{
+            /*box-shadow: 0 5px 15px 15px #344e41;*/
+            border-radius: 0 0 25px 25px;
+            background-color: #344e41;
+            border-width: 0 1px 1px 1px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.100);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="bg-image" style="background-image: url(../assets/img/background-image.png); height: 100vh; background-size: cover; background-repeat: no-repeat;">
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand">
+                <img src="../assets/img/Benlu-ca.de Logo.png" alt="Bootstrap" width="55" height="55">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                            <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                        </svg> 
+                        Startseite
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="/projekte/index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2"/>
+                        </svg> 
+                        Projekte 
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                            <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                        </svg> 
+                        Unser Team <!--<span class="badge text-bg-danger">Neu!</span>-->
+                    </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                                <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+                                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                            </svg>
+                            Partnerschaften & Sponsoren
+                        </a>
+                        <ul class="dropdown-menu">
+
+
+                            <!--MASTERHEAL-->
+                            <li><a class="dropdown-item" href="https://masterheal.de">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16" height="16" viewBox="0 0 512.000000 512.000000"
+                                     preserveAspectRatio="xMidYMid meet">
+                                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                       fill="currentColor" stroke="none">
+                                        <path d="M575 4899 c-188 -28 -331 -180 -355 -379 -7 -56 -10 -744 -8 -2020 3
+                                        -1825 4 -1938 21 -1987 28 -84 94 -171 165 -220 125 -85 -74 -78 2162 -78
+                                        2236 0 2037 -7 2162 78 73 50 139 140 165 225 17 54 18 173 18 2042 0 2236 7
+                                        2037 -78 2162 -49 71 -136 137 -220 165 -49 17 -159 18 -2012 19 -1083 1
+                                        -1987 -2 -2020 -7z m1498 -1070 c57 -29 57 -23 57 -417 l0 -364 -29 -29 -29
+                                        -29 -364 0 c-329 0 -365 2 -384 18 -43 34 -44 47 -44 412 l0 352 34 34 34 34
+                                        352 0 c239 0 358 -4 373 -11z m1733 -23 l34 -34 0 -352 c0 -365 -1 -378 -44
+                                        -412 -19 -16 -55 -18 -384 -18 l-364 0 -29 29 -29 29 0 364 c0 329 2 365 18
+                                        384 34 42 44 43 410 44 l354 0 34 -34z m-880 -831 c55 -23 64 -57 64 -250 l0
+                                        -165 283 0 c309 0 311 0 342 -60 13 -25 15 -111 15 -580 0 -594 1 -587 -52
+                                        -624 -32 -22 -494 -24 -536 -2 -46 24 -52 48 -55 236 l-2 175 -425 0 -425 0
+                                        -2 -175 c-2 -113 -7 -183 -15 -198 -25 -48 -49 -52 -310 -52 -266 0 -273 1
+                                        -303 60 -22 43 -22 1117 0 1160 31 60 33 60 342 60 l283 0 0 165 c0 191 9 227
+                                        62 250 49 21 683 22 734 0z"
+                                        />
+                                    </g>
+                                </svg>
+                                MasterHeal <span class="badge text-bg-success">Partner</span>
+                            </a>
+                            </li>
+                            <!--MASTERHEAL ENDE-->
+
+
+                        </ul>
+                    </li>
+                    <a type="button" class="btn btn-success ms-3" href="https://benlu-ca.de/go/dc">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                            <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                        </svg>
+                        Unser Discord
+                    </a>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-md-5" style="padding-top: 10px;">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Discord Server <span class="badge bg-secondary">Eigener</span></h5>
+                          <p class="card-text">Benlu-ca hat sein eigenen Discord Server, auf diesem kann man mit anderen schreiben und vieles mehr. Wir freuen uns dich auf unserem Discord Server begrüßen zu dürfen!</p>
+                          <a href="https://benlu-ca.de/go/dc" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                            </svg> 
+                            Zum Benlu-ca Discord
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-md-5" style="padding-top: 10px;">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">MasterHeal x Discord Bot <span class="badge bg-success">Partner</span></h5>
+                          <p class="card-text">MasterHeal hat ein Bot welcher von Benlu-ca programmiert wurde. Dieser Bot hat (stand 24.03.2024) 15 Slash-Kommandos die für Spieler als auch nur für Administrationen zur Verfügung stehen.</p>
+                          <a href="https://dc.masterheal.de" class="btn btn-danger">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                            </svg> 
+                            Zum MasterHeal Discord
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-body-tertiary text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            <span class="text-left">Copyright © 2024 - Benlu-ca.de</span> |
+            <a class="text-right text-body" href="../rechtliches/index.html">Impressum & Datenschutz</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js">
+
+    </script>
+</body>
+</html>
+
